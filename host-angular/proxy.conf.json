@@ -1,0 +1,18 @@
+{
+  "/micro-angular": {
+    "target": "http://localhost:4002/",
+    "secure": true,
+    "pathRewrite": {
+      "^/micro-angular": ""
+    },
+    "changeOrigin": true
+  },
+  "/micro-react": {
+    "target": "http://localhost:4001/",
+    "secure": true,
+    "pathRewrite": {
+      "^/micro-react": ""
+    },
+    "changeOrigin": true
+  }
+}
