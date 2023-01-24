@@ -66,20 +66,20 @@ module.exports = {
 
       remotes: {
         reactMf: "reactMf@http://localhost:4001/remoteEntry.js",
-        angularMf: "http://localhost:4002/remoteEntry.js",
+        angularMf: "angularMf@http://localhost:4002/remoteEntry.js",
       },
 
-      shared: {
-        ...dependencies,
-        react: {
-          singleton: true,
-          requiredVersion: dependencies["react"],
-        },
-        "react-dom": {
-          singleton: true,
-          requiredVersion: dependencies["react-dom"],
-        },
-      },
+      // shared: {
+      //   ...dependencies,
+      //   react: {
+      //     singleton: true,
+      //     requiredVersion: dependencies["react"],
+      //   },
+      //   "react-dom": {
+      //     singleton: true,
+      //     requiredVersion: dependencies["react-dom"],
+      //   },
+      // },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",

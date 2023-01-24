@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public microReact: WebComponentWrapperOptions = {
-    type: 'module',
-    remoteEntry: '/micro-react/remoteEntry.js',
+    remoteEntry: 'http://localhost:4001/remoteEntry.js',
     exposedModule: './react-web-component',
+    remoteName: 'reactMf',
     elementName: 'react-element',
   };
   public microAngular: WebComponentWrapperOptions = {

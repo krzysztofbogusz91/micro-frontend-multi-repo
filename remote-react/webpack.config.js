@@ -6,6 +6,13 @@ const { dependencies } = require("./package.json");
 module.exports = {
   entry: "./src/index",
   mode: "development",
+  output: {
+    uniqueName: "react",
+    // publicPath: "auto",
+    // scriptType: "module",
+  },
+
+  // experiment: { outputModule: true },
   devServer: {
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -58,6 +65,7 @@ module.exports = {
       name: "reactMf",
       filename: "remoteEntry.js",
 
+      // library: { type: "var", name: "react" },
       exposes: {
         "./react-web-component": "./src/bootstrap.js",
       },

@@ -5,7 +5,7 @@ const {
 
 module.exports = withModuleFederationPlugin({
   name: "angularMf",
-
+  // library: { type: "module" },
   exposes: {
     "./Component": "./src/app/app.component.ts",
     "./angular-web-component": "./src/bootstrap.ts",

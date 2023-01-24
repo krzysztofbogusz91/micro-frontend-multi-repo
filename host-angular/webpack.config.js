@@ -5,7 +5,7 @@ const {
 
 module.exports = withModuleFederationPlugin({
   remotes: {
-    reactMf: "reactMf@http://localhost:4001/remoteEntry.js",
+    reactMf: "http://localhost:4001/remoteEntry.js",
     angularMf: "http://localhost:4002/remoteEntry.js",
   },
 

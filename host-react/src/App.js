@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "reactMf/react-web-component";
 import "angularMf/angular-web-component";
+// import "feed/w-feed";
 // const RemoteApp = React.lazy(() => import("reactMf/react-web-component"));
 
 function App() {
