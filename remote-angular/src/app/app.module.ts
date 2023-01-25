@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Injector, NgModule } from '@angular/core';
+import { Injector, NgModule, NgZone } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -19,7 +19,9 @@ import { AppComponent } from './app.component';
   entryComponents: [AppComponent],
 })
 export class AppModule {
-  constructor(private injector: Injector) {}
+  constructor(private injector: Injector, private ngZone: NgZone) {
+    (window as any).ngZone = this.ngZone;
+  }
 
   ngDoBootstrap() {
     // console.log('FeedModule');

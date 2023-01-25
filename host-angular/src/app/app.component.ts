@@ -13,6 +13,12 @@ export class AppComponent {
     remoteName: 'reactMf',
     elementName: 'react-element',
   };
+  // public microReact: WebComponentWrapperOptions = {
+  //   remoteEntry: '/micro-feed/remoteEntry.js',
+  //   type: 'module',
+  //   exposedModule: './web-component',
+  //   elementName: 'feed-component',
+  // };
   public microAngular: WebComponentWrapperOptions = {
     type: 'module',
     remoteEntry: '/micro-angular/remoteEntry.js',

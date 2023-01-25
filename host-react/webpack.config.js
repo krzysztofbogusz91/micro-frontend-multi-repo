@@ -6,6 +6,7 @@ const { dependencies } = require("./package.json");
 module.exports = {
   entry: "./src/index",
   mode: "development",
+  // target: "es5",
   devServer: {
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -41,7 +42,9 @@ module.exports = {
           {
             loader: "babel-loader",
             options: {
-              presets: ["@babel/preset-env", "@babel/preset-react"],
+              // presets: ["@babel/preset-env", "@babel/preset-react"],
+              cacheDirectory: true,
+              presets: ["@babel/react", "@babel/env"],
             },
           },
         ],

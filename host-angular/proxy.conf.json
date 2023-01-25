@@ -14,5 +14,13 @@
       "^/micro-react": ""
     },
     "changeOrigin": true
+  },
+  "/micro-feed": {
+    "target": "http://localhost:4008/",
+    "secure": true,
+    "pathRewrite": {
+      "^/micro-feed": ""
+    },
+    "changeOrigin": true
   }
 }
