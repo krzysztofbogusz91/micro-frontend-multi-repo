@@ -20,9 +20,9 @@ export class AppComponent {
   //   elementName: 'feed-component',
   // };
   public microAngular: WebComponentWrapperOptions = {
-    type: 'module',
+    remoteName: 'angularMf',
     remoteEntry: '/micro-angular/remoteEntry.js',
-    exposedModule: './angular-web-component',
+    exposedModule: './web-component',
     elementName: 'angular-element',
   };
 

@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
-import "core-js/actual";
+// import "core-js/actual";
 import "./App.css";
 import "reactMf/react-web-component";
-// import "angularMf/angular-web-component";
+import "angularMf/web-component";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
       <div>
         REMOTE:
         <react-element></react-element>
-        {/* <angular-element></angular-element> */}
+        <angular-element></angular-element>
       </div>
     </div>
   );
